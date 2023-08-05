@@ -1,0 +1,22 @@
+<app-search></app-search>
+<ul > <li *ngFor="let items of food">
+     
+        <a routerLink="/items/{{items.id}}"> <img src="{{items.imageurl}}" alt="">
+        <div class="content">
+         <div class="name">
+        {{items.name}}
+      </div>
+      <div class="ct">
+         🕐 {{items.Cocktime}}
+      </div>
+      <div class="tg">
+         {{items.tags}}
+      </div>
+      <div class="pr">
+         ₨{{items.price}}
+      </div>
+     
+        </div>
+      </a>  
+</li>
+</ul>
